@@ -1,42 +1,58 @@
 # Proyecto Urban Routes
+Proyecto de pruebas automatizadas para la aplicación **Urban Routes** utilizando el método Page Object Model (POM) con `pytest` y `selenium`.
 
-#CONTENIDO
--Descripción
--Archivos del proyecto
--Lista de comprobación
--Recursos
--Instrucciones
+---
 
-##DESCRIPCIÓN
+## 📋 Contenido
 
-Se está comprobando cómo la aplicación Urban Routes automatice pruebas
-El objetivo de este proyecto hacer pruebas automatizadas con el método POM
+- [Descripción](#descripción)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Lista de Comprobación](#lista-de-comprobación)
+- [Recursos](#recursos)
+- [Instrucciones de Uso](#instrucciones-de-uso)
 
-##ARCHIVOS DEL PROYECTO
- 
-- data.py: Este archivo contiene la URL y los cuerpos necesarios para las solicitudes.
-- main: Este archivo contiene todas las clases y un tests que contiene todas las pruebas(pruebas enlazadas).
-- README.md: Este archivo incluye una descripción del proyecto. 
-- .gitignore: Incluye los archivos que no se deben subir a los repositorios.
+---
 
-##LISTA DE COMPROBACIÓN
-1. Configurar la dirección (esta parte se ha escrito para ti como ejemplo).
-2. Seleccionar la tarifa Comfort.
-3. Rellenar el número de teléfono.
-4. Agregar una tarjeta de crédito.
-5. Escribir un mensaje para el controlador.
-   Mensaje predefinido es muy largo solo se aceptan mensajes de 24 caracteres(No ejecuta error debido a que esta información es opcional)
-6. Pedir una manta y pañuelos.
-7. Pedir 2 helados.
-8. Aparece el modal para buscar un taxi.
-9. Esperar a que aparezca la información del conductor en el modal
+## 📌 Descripción
 
-##RECURSOS
-Paquetes instalados
-- pytest
-- selenium
+Este proyecto tiene como objetivo automatizar el flujo de uso de la app **Urban Routes**, validando su comportamiento en distintas etapas mediante pruebas automatizadas con el enfoque **POM** (Page Object Model).
 
-##INSTRUCCIONES
+---
+
+## 📁 Estructura del Proyecto
+
+- `data.py`: Contiene la URL y los cuerpos necesarios para las solicitudes.
+- `utilidades.py`: Función para obtener el código de confirmación del teléfono.
+- `selector.py`: Selectores de la app y funciones relacionadas.
+- `main.py`: Contiene funciones principales y una clase con todas las pruebas.
+- `README.md`: Este archivo que estás leyendo 😊
+- `.gitignore`: Archivos que no deben incluirse en el repositorio.
+
+---
+
+## ✅ Lista de Comprobación
+
+1. ✅ Configurar la dirección.
+2. ✅ Seleccionar la tarifa **Comfort**.
+3. ✅ Rellenar el número de teléfono.
+4. ✅ Agregar una tarjeta de crédito.
+5. ⚠️ Escribir un mensaje para el conductor *(máx. 24 caracteres, pero es opcional)*.
+6. ✅ Pedir una manta y pañuelos.
+7. ✅ Pedir 2 helados 🍦.
+8. ✅ Aparece el modal de búsqueda de taxi.
+9. ✅ Mostrar información del conductor en el modal.
+
+---
+
+## 📦 Recursos
+
+Paquetes necesarios:
+- `python`    Ver.- 3.13.12
+- `pytest`    Ver.- 8.3.5
+- `selenium`  Ver.- 4.31.0
+
+
+## 📦 Instrucciones
 - Ejecuta todas las pruebas del proyecto a través de la terminal de PyCharm: escribe pytest main.py en la terminal.
 - Ejecuta la pruebas a través de la interfaz de PyCharm haciendo clic en el botón con un triángulo verde en la parte superior.
   - Asegúrate de ejecutarlas en el archivo correcto.
